@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Book;
+  src: url("./fonts/Syabil-Book.ttf");
+}
 body{
   margin:0;
   padding:0;
@@ -11,11 +15,13 @@ body{
   position:relative;
   height: 100%;
   padding: 5%;
-  padding-bottom: 0%;
+  padding-bottom: 15%;
   column-count: 12;
   background-image:url("PNG/Header/img.png");
   background-position: center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 #header_main_div{
   width: 100%;
@@ -106,6 +112,7 @@ header div ul{
 #features{
  display: inline-flex;
  width: 100%;
+ font-family: Book;
 }
 .carta{
   width: 100%;
@@ -116,7 +123,8 @@ header div ul{
   padding: 3%;
 }
 #features h5{
-  font-family: 'Raleway SemiBold', arial;
+  font-family: Book;
+  font-size: 1.5rem;
   text-align:center;
   margin-bottom:50px;
 }
@@ -124,7 +132,7 @@ header div ul{
 #features p{
   color:#949494;
   text-align:center;
-  font-family: Helvetica Neue, Arial, sans-serif;
+  font-family: Book;
   margin-bottom:25px;
 }
 
@@ -200,11 +208,24 @@ header div ul{
   width: 30rem;
 }
 /*portraits aligné-animation*/
-
+#hunt{
+  font-family: Book;
+  text-align: center;
+}
+#visages{
+  text-align: center;
+  align-items: center;
+  font-family: Book;
+}
+#vislist{
+  display: inline-flex;
+  margin: 0 auto;
+}
 #visages li{
     transition-duration:0.3s;
     filter:grayscale(1);
     opacity:0.75;
+    list-style-type: none;
 }
 
 #visages li:hover{
@@ -213,9 +234,35 @@ header div ul{
     filter:grayscale(0);
 }
 
+#inputt{
+  font-family: Book;
+}
 
+.form{
+  width: 20rem;
+  padding: 2%;
+  font-size: 1rem;
+  color: #e3e3e3;
+  border-style: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.formbtn{
+  padding: 2%;
+  font-size: 1rem;
+  background-color: #2ecc71;
+  border-style: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
 /*icones liens alignés*/
-
+#saycontainer{
+  text-align: center;
+  font-family: Book;
+  color:#949494;
+}
+#saycontainer p{
+}
 #sayhi svg{
        height:50px;
        width:50px;
@@ -228,9 +275,15 @@ header div ul{
     width:60px;
     fill:#2ecc71;
 }
-
+.lista{
+  display: inline-flex;
+  list-style-type: none;
+}
 #thefooter{
     display:inline-block;
+    width: 100%;
+    text-align: center;
+    ;font-family: Book;
 }
 
 #thefooter a{
@@ -241,4 +294,14 @@ header div ul{
     text-decoration:none;
     color:black;
     transition-duration:0.2s;
+}
+#innerfooter{
+  display: inline-flex;
+}
+#innerfooter a{
+  text-decoration: none;
+}
+#innerfooter li{
+  display: list-item;
+  list-style-type:none;
 }
