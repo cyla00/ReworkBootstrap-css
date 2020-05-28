@@ -3,8 +3,8 @@
   src: url("./fonts/Syabil-Book.ttf");
 }
 body{
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 .greenzone{
   height: 1vh;
@@ -13,7 +13,7 @@ body{
 /*Header*/
 #fond1{
   position:relative;
-  height: 30vh;
+  height: 50vh;
   padding: 5%;
   padding-bottom: 15%;
   column-count: 12;
@@ -22,6 +22,14 @@ body{
   background-size: cover;
   display: flex;
   flex-direction: column;
+}
+#titre{
+  margin:0px;
+  color: white;
+}
+#fondp{
+  color: white;
+  margin-top: 6%;
 }
 #header_main_div{
   width: 100%;
@@ -34,12 +42,9 @@ body{
   height: 30rem;
   border: none;
 }
-.divUnderCard{
-  display: flex;
-  flex-direction: row;
-}
 #notifyblock{
-  width: 100%;
+  margin: auto;
+  padding: 3%;
 }
 header div h5{
   font-family: 'Pacifico', cursive;
@@ -303,4 +308,37 @@ header div ul{
 #innerfooter li{
   display: list-item;
   list-style-type:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 780px) {
+  #notifiedcontent{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .form{
+    display: inline-flex;
+  }
+  .listphotofull{
+    display: block;
+    text-align: center;
+    align-items: center;
+  }
 }
