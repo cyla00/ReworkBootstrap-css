@@ -20,6 +20,9 @@ body{
   display: flex;
   flex-direction: column;
 }
+#titrePx{
+  display: none;
+}
 #titre{
   margin:0px;
   color: white;
