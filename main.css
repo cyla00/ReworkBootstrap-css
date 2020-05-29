@@ -12,11 +12,8 @@ body{
 }
 /*Header*/
 #fond1{
-  /* position:relative; */
   height: 50vh;
-  padding: 5%;
   padding-bottom: 15%;
-  column-count: 12;
   background-image:url("PNG/Header/img.png");
   background-position: center;
   background-size: cover;
@@ -37,7 +34,7 @@ body{
   display: table;
 }
 .companybtn{
-  padding: 3%;
+  padding: 1.5%;
   margin-right: 2%;
   border: none;
   border-radius: 100%;
@@ -59,10 +56,9 @@ body{
   border: none;
 }
 #notifyblock{
-  margin: 0%;
-  padding: 0%;
+  margin-left: 0px;
 }
-header div h5{
+header div h1{
   font-family: 'Pacifico', cursive;
   font-size:70px;
 }
@@ -270,14 +266,17 @@ header div ul{
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   display: inline-flex;
+  outline: none;
 }
 .formbtn{
   padding: 2%;
   font-size: 1rem;
   background-color: #2ecc71;
+  color: white;
   border-style: none;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  outline: none;
 }
 /*icones liens alignés*/
 #saycontainer{
@@ -382,5 +381,9 @@ header div ul{
   }
   #vislist{
     display: none;
+  }
+.carta{
+  grid-column: 12;
+    padding: 0%;
   }
 }
