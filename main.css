@@ -12,7 +12,7 @@ body{
 }
 /*Header*/
 #fond1{
-  position:relative;
+  /* position:relative; */
   height: 50vh;
   padding: 5%;
   padding-bottom: 15%;
@@ -31,6 +31,22 @@ body{
   color: white;
   margin-top: 6%;
 }
+.links{
+  width: 40vw;
+  padding: 0%;
+  display: table;
+}
+.companybtn{
+  padding: 3%;
+  margin-right: 2%;
+  border: none;
+  border-radius: 100%;
+  background-color: rgba(13, 13, 13, 0.5);
+  outline: none;
+}
+.companybtn:hover{
+  background-color: #2ecc71;
+}
 #header_main_div{
   width: 100%;
   padding: 1;
@@ -43,8 +59,8 @@ body{
   border: none;
 }
 #notifyblock{
-  margin: auto;
-  padding: 3%;
+  margin: 0%;
+  padding: 0%;
 }
 header div h5{
   font-family: 'Pacifico', cursive;
@@ -109,7 +125,9 @@ header div ul{
     margin-left:230px;
     margin-top:50px;
 }
-
+#bottoneX{
+  display: none;
+}
 
 /*features*/
 
@@ -224,6 +242,7 @@ header div ul{
 #vislist{
   display: inline-flex;
   margin: 0 auto;
+  padding: 0%;
 }
 #visages li{
     transition-duration:0.3s;
@@ -250,6 +269,7 @@ header div ul{
   border-style: none;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  display: inline-flex;
 }
 .formbtn{
   padding: 2%;
@@ -327,18 +347,40 @@ header div ul{
 
 
 @media only screen and (max-width: 780px) {
+  #fond1{
+    padding: 0%;
+  }
+  #features{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
   #notifiedcontent{
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
+  .notifiedImg{
+    width: 300px;
+  }
   .form{
-    display: inline-flex;
+    display: none;
+  }
+  #bottoneX{
+    display: block;
+    background-color:  #2ecc71;
+    color: white;
+    border-radius: 10px;
+    padding: 3%;
+    border: none;
   }
   .listphotofull{
     display: block;
     text-align: center;
     align-items: center;
+  }
+  #vislist{
+    display: none;
   }
 }
