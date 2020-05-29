@@ -320,6 +320,7 @@ header div ul{
     display: none;
   }
   #titrePx{
+    display: block;
     margin-top: 30%;
     font-family: 'Pacifico', cursive;
     font-size:70px;
